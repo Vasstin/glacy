@@ -77,7 +77,7 @@ body > input[type="radio"] {
   font-size: 60px;
 }
 
-.slide-btn {
+/* .slide-btn {
   display: inline-block;
   padding: 12px 50px;
 
@@ -94,6 +94,26 @@ body > input[type="radio"] {
   background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border-radius: 100px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+} */
+
+.slide-btn {
+  display: inline-block;
+  padding: 12px 0;
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 41px;
+  vertical-align: top;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0,76);
+  background: #f26843;
+  border-radius: 100px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  width: 280px;
+  height: 64px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  background-color: #ffffff;
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
 }
 
 .slide-btn:hover {
@@ -157,3 +177,12 @@ body > input[type="radio"] {
   background-color: #fff;;
 }
 
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.contacts p {
+  margin: 0;
+}
