@@ -230,7 +230,7 @@ body > input[type="radio"] {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 982px;
+  width: 100%;
  
 }
 
