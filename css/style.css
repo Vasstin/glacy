@@ -15,6 +15,26 @@ text-decoration: none;
   box-sizing: border-box;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  
+  position: absolute;
+  
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
 
 body > input[type="radio"] {
   display: none;
@@ -178,6 +198,7 @@ body > input[type="radio"] {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  color: #fff;
 }
 
 .contacts p {
@@ -209,7 +230,7 @@ body > input[type="radio"] {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 865px;
+  width: 982px;
  
 }
 
@@ -233,9 +254,114 @@ body > input[type="radio"] {
 
 
 .user-nav {
+  display: flex;
   margin: 0;
   padding: 0;
+  margin-top: 23px;
   width: 262px;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #fff;
+  
+}
+
+.user-nav li p {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 100px;
+  margin: 0;
+}
+
+.user-nav li p {
+  margin-right: 10px;
+}
+
+.user-nav li:nth-child(1) p {
+  width: 32px;
+  height: 32px;
+  background-image: url("/img/loupe.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.user-nav li:nth-child(2) p {
+  width: 93px;
+  height: 32px;
+  padding: 8px 17px 9px 44px;
+}
+
+
+.user-nav li:nth-child(2) p::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 16px;
+  width: 21px;
+  height: 19px;
+  background-image: url("/img/entrance-white.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.user-nav li:nth-child(3) p {
+  width: 117px;
+  height: 32px;
+  padding: 8px 17px 9px 44px;
+  margin-right: 0;
+}
+
+.user-nav li:nth-child(3) p::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 16px;
+  width: 21px;
+  height: 20px;
+  background-image: url("/img/basket.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.search-field {
+  position: relative; 
+  
+}
+
+.search-list {
+  display: none;
+  position: absolute;
+  top: 36;
+  right: 10;
+  list-style: none;
+  z-index: 100;
+}
+
+.search-field:hover .search-list {
+  display: block;
+}
+
+.search-list .search-item {
+  padding: 20px 15px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  background-color: #f8f7f4;
+  border-radius: 5px;
+}
+
+.search-input {
+  width: 311px;
+  padding: 15px;
+  border: 1px solid #d3d3d2;
+  border-radius: 4px;
+  color: #999999;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.search-input:focus::placeholder {
+  color: transparent;
 }
 
 .sub-menu {
