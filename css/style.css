@@ -303,6 +303,16 @@ body > input[type="radio"] {
   background-position: 0 0;
 }
 
+.user-nav li:nth-child(2) p:hover::before {
+  background-image: url("/img/entrance.svg");
+}
+
+.user-nav li:nth-child(2) p:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+
 .user-nav li:nth-child(3) p {
   width: 117px;
   height: 32px;
@@ -343,7 +353,6 @@ body > input[type="radio"] {
 .search-field:hover p {
   background-image: url("/img/loupe-hover.svg");
   background-color: #fff;
-  
 }
 
 .search-list .search-item {
@@ -403,7 +412,7 @@ body > input[type="radio"] {
 }
 
 .login-list {
- 
+ display: none;
   position: absolute;
   top: 36;
   right: 10;
@@ -415,6 +424,10 @@ body > input[type="radio"] {
   background-color: #f8f7f4;
   border-radius: 5px;
   z-index: 100;
+}
+
+.login-field:hover .login-list {
+  display: block;
 }
 
 .login-item {
@@ -433,7 +446,7 @@ body > input[type="radio"] {
 }
 
 .login-hidden{
-  /* display: none; */
+  display: none;
   position: absolute;
   top: 7;
   left: 20;
@@ -451,7 +464,12 @@ body > input[type="radio"] {
 .form-buttons {
   display: flex;
   flex-wrap: wrap;
-  
+  position: relative;
+}
+
+.form-a {
+  display: flex;
+  flex-direction: column;
 }
 
 .btn-sign-in {
@@ -470,6 +488,49 @@ body > input[type="radio"] {
   font-size: 13px;
   font-weight: 400;
   line-height: 24px; 
+}
+
+.new-password::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  top: 19px;
+  left: 120;
+  right: 21px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.sign-up::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  top: 43;
+  left: 120;
+  right: 3px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* 
+.login-field:hover p {
+  background-color: #fff;
+  color: #000;
+} */
+
+
+.login-input:focus::placeholder {
+  color: transparent;
+}
+
+.login-input:focus + label {
+  display: block;
+}
+
+.login-input:focus {
+  border: 2px solid rgba(46, 136, 228, 0.52);
+  padding: 14px;
+  color: #323232;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
 }
 
 .sub-menu {
