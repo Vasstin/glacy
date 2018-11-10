@@ -40,8 +40,28 @@
                     </li>
                   </ul>
                 </li>
-                <li>
+                <li class="login-field">
                   <p>Вход</p>
+                  <ul class="login-list">
+                    <li>
+                      <form method="POST" action="https://echo.htmlacademy.ru">
+                        <div class="login-item">
+                          <input class="login-input" type="text" name="email" id="id-email" placeholder="Электронная почта">
+                          <label class="login-hidden" for="id-email">Ваша электронная почта</label>
+                        </div>
+                        <div class="login-item">
+                          <input class="login-input" type="password" name="password" id="id-password" placeholder="Пароль">
+                          <label class="login-hidden" for="id-password">Ваш пароль</label>
+                        </div>
+                        <div class="form-buttons">
+                          <button class="global-btn btn-sign-in" type="submit" >Войти</button>
+                          <a class="new-password" href="#">Забыли пароль?</a>
+                          <a class="sign-up" href="#">Новая регистрация</a>
+                        </div>
+                      </form>
+                    </li>
+                  </ul>
+                    
                 </li>
                 <li>
                   <p>Пусто</p>
