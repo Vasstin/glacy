@@ -279,7 +279,7 @@ body > input[type="radio"] {
 .user-nav .search-field p {
   width: 32px;
   height: 32px;
-  background-image: url("/img/loupe.svg");
+  background-image: url("../img/loupe.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -298,7 +298,7 @@ body > input[type="radio"] {
   left: 16px;
   width: 21px;
   height: 19px;
-  background-image: url("/img/entrance-white.svg");
+  background-image: url("../img/entrance-white.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -317,7 +317,7 @@ body > input[type="radio"] {
   left: 16px;
   width: 21px;
   height: 20px;
-  background-image: url("/img/basket.svg");
+  background-image: url("../img/basket.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -341,7 +341,7 @@ body > input[type="radio"] {
 }
 
 .search-field:hover p {
-  background-image: url("/img/loupe-hover.svg");
+  background-image: url("../img/loupe-hover.svg");
   background-color: #fff;
   
 }
