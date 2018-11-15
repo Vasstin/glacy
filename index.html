@@ -46,7 +46,7 @@
                     <li>
                       <form method="POST" action="https://echo.htmlacademy.ru">
                         <div class="login-item">
-                          <input class="login-input" type="text" name="email" id="id-email" placeholder="Электронная почта">
+                          <input class="login-input" type="email" name="email" id="id-email" placeholder="Электронная почта">
                           <label class="login-hidden" for="id-email">Ваша электронная почта</label>
                         </div>
                         <div class="login-item">
@@ -65,18 +65,18 @@
                   </ul>
                     
                 </li>
-                <li>
+                <li class="basket">
                   <p>Пусто</p>
                 </li>
               </ul>
             </nav>
-            <!-- <div class="contacts">
-              <p class="work-time">C 10 до 20, ежедневно</p>
-              <p class="phone">8 812 450-25-25</p>
-          </div> -->
           </header>
+          <main>
+          <div class="contacts">
+            <p class="work-time">C 10 до 20, ежедневно</p>
+            <p class="phone">8 812 450-25-25</p>
+          </div>
           <div class="slider">
-              
              <div class="slide" id="slide1">
                <div class="slide-title">Крем-брюле и пломбир с малиновым джемом</div>
                <a class="slide-btn" href="#">Давайте оба</a>
@@ -94,9 +94,96 @@
                 <label for="btn-2"></label>
                 <label for="btn-3"></label>
               </div>
-              
           </div>
-          
+          <section class="gift-wrapper">
+            <h2 class="visually-hidden">Акции</h2>
+            <div class="raspberries-gift">
+              <h2>Малинка даром!</h2>
+              <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно. </p>
+              <a href="#" class="global-btn gift-btn-fix">Хочу варенье!</a>
+            </div>
+            <div class="choco-gift">
+              <h2>Шоколадки даром!</h2>
+              <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+              <a href="#" class="global-btn gift-btn">Хочу шоколадки!</a>
+            </div>
+          </section>
+          <section>
+            <h1 class="visually-hidden">Популярное мороженое</h1>
+            <ul class="popular-list">
+              <li class="popular-item">
+                <b>310 ₽</b>
+                <p>/кг</p>
+                <h3 class="popular-item-type">
+                  <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+              </h3>
+              </li>
+              <li class="popular-item">
+                  <b>380 ₽</b>
+                  <p>/кг</p>
+                  <h3 class="popular-item-type">
+                    <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+                </h3>
+              </li>
+              <li class="popular-item">
+                  <b>355 ₽</b>
+                  <p>/кг</p>
+                  <h3 class="popular-item-type">
+                    <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                </h3>
+              </li>
+              <li class="popular-item">
+                  <b>415 ₽</b>
+                  <p>/кг</p>
+                  <h3 class="popular-item-type">
+                    <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+                </h3>
+              </li>
+            </ul>
+          </section>
+          <section class="features">
+            <h2 class="visually-hidden">Про Магазин Глейси</h2>
+            <h2>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
+            <ul class="features-list">
+              <li class="features-item"><p>Все наше мороженое изготавливается на собственном производстве, 
+                с использованием современного оборудования и проверенных временем технологий.</p>
+              </li>
+              <li class="features-item"><p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, 
+                с которыми нас связывает долговременное сотрудничество.</p>
+              </li>
+              <li class="features-item"><p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. 
+                Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p> 
+              </li>
+              <li class="features-item"><p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, 
+                который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+              </li>
+            </ul>
+          </section>
+          <section class="section-box">
+            <article class="blog">
+              <h2 class="visually-hidden">Наш блог</h2>
+              <p>Новое в нашем блоге</p>
+              <a href="#">10 способов сервировки фруктовых щербетов к столу   </a>
+            </article>
+            <section class="subscribe">
+              <div class="subsrcibe-wrapper">
+                <h2 class="visually-hidden">Подписка</h2>
+                <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. 
+                Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+                <input class="subs-input" type="email" placeholder="Электронная почта">
+                <button class="global-btn subs-btn" type="submit">Отправить</button>
+              </div>
+            </section>
+          </section>
+          <section>
+            <h2 class="visually-hidden">Как к нам добраться</h2>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.1466886176136!2d30.3262768!3d59.9392216!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1542290050779" 
+                width="1200" height="640" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="contacts-all"></div>
+          </section>
+          </main>
         </div>
       </div>
     </body>
