@@ -983,3 +983,324 @@ body > input[type="radio"] {
   margin-left: -27px;
   margin-right: -27px;
 }
+
+.contacts-all {
+  position: absolute;
+  top: 60px;                   
+  right: 27px;
+  width: 302px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 29px 25px;
+}
+
+.contacts-all p:nth-child(2n+1) {
+  margin: 0;
+  color: #323232;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.contacts-all p:nth-child(2n) {
+  margin: 0;
+  color: #323232;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.contacts-all p:nth-child(1) {
+  margin-bottom: 3px;
+}
+
+.contacts-all p:nth-child(2) {
+  margin-bottom: 17px;
+}
+
+.contacts-all p:nth-child(3) {
+  margin-bottom: 6px;
+}
+
+.contacts-all p:nth-child(4) {
+  margin-bottom: 5px;
+}
+
+.contacts-all p:nth-child(5) {
+  margin-bottom: 23px;
+}
+
+.form-btn {
+  padding: 10px 27px;
+  color: #fefefe;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.location {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.modal-comment {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 50%;
+  top: 337px;
+  margin-left: -238px;
+  width: 478px;
+  padding: 18px 25px 27px 24px;
+  background-color: #f8f7f4;
+  border-radius: 15px;
+}
+
+.modal-comment form {
+  margin: 0;
+}
+
+.modal-comment h2 {
+  margin: 0;
+  margin-bottom: 22px;
+  color: #323232;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.modal-comment input::placeholder {
+  color: #999999;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.modal-comment input {
+  padding: 8px 15px 8px 15px;
+  margin-bottom: 20px;
+  width: 267px;
+  color: #323232;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.modal-comment .comment-input {
+  padding: 5px 15px 5px 15px;
+  margin-bottom: 20px;
+  color: #323232;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  background-color: #ffffff;
+  border-radius: 4px;
+  width: 428px;
+  height: 155px;
+  resize: none;
+}
+
+.modal-comment .comment-input::placeholder {
+  color: #999999;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.modal-comment label {
+  display: none;
+  position: absolute;
+  top: -12;
+  left: 16;
+  color: #5b9ddf;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 11px;
+}
+
+.modal-comment div {
+  position: relative;
+}
+
+.send-form-btn {
+  display: block;
+  margin-left: auto;
+  padding: 11px 24px;
+}
+
+.modal-comment input:focus::placeholder {
+  color: transparent;
+}
+
+.modal-comment textarea:focus::placeholder {
+  color: transparent;
+}
+ 
+.modal-comment input:focus + label {
+  display: block;
+}
+
+.modal-comment textarea:focus + label {
+  display: block;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15;
+  right: 17;
+  width: 23px;
+  height: 23px;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-close::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 22px;
+  background-color: #231f20;
+  transform: rotate(-45deg);
+}
+
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 22px;
+  background-color: #231f20;
+  transform: rotate(45deg);
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social {
+  padding-top: 16px;
+  margin-bottom: 29px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+  width: 185px;
+  list-style: none;
+}
+
+.social-item {
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.svg-opacity {
+  fill-opacity: 0.8;
+}
+
+.social-item:hover,
+.social-item:focus { 
+  border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.social-item:hover .svg-opacity {
+  fill-opacity: 1;
+}
+
+.social-item:focus .svg-opacity {
+  fill-opacity: 1;
+}
+
+.social-item:active {
+  border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.social-item:active .svg-opacity{
+  fill-opacity: 0.9;
+}
+
+.useful-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 326px;
+  height: 35px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 12px;
+  padding-left: 22px;
+ 
+}
+
+.useful-list a {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  border-bottom: 1px solid rgba(255,255,255, 0.2);
+}
+
+.useful-item-bold a {
+  font-weight: 700;
+}
+
+.useful-item-bold {
+  position: relative;
+}
+
+.useful-item-bold::before {
+  content: "";
+  position: absolute;
+  top: 7;
+  left: -17;
+  width: 15px;
+  height: 13px;
+  background-image: url("../img/heart.svg")
+}
+
+.useful-list:nth-child(2) {
+  min-width: 161px;
+}
+
+.copyright {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 190px;
+}
+
+
+.coop-item .coop-logo {
+  display: block;
+  width: 108px;
+  height: 39px;
+  background-image: url("../img/logo-htmlacademy.svg");
+  background-repeat: no-repeat;
+  
+}
+
+.copyright  .coop-item {
+  color: #fefefe;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.copyright a {
+  color: #fefefe;
+} 
