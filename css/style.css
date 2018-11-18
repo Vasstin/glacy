@@ -1267,14 +1267,14 @@ body > input[type="radio"] {
   content: "";
   position: absolute;
   top: 7;
-  left: -17;
+  left: -19;
   width: 15px;
   height: 13px;
   background-image: url("../img/heart.svg")
 }
 
-.useful-list:nth-child(2) {
-  min-width: 161px;
+.useful-list li:nth-child(2) {
+  min-width: 162px;
 }
 
 .copyright {
@@ -1304,3 +1304,14 @@ body > input[type="radio"] {
 .copyright a {
   color: #fefefe;
 } 
+
+
+.useful-item:hover a {
+  color: #ffbc9e;
+  border-bottom: 1px solid rgba(255,188,158, 0.3);
+}
+
+.coop-item:hover a {
+  color: #ffbc9e;
+  border-bottom: 1px solid rgba(255,188,158, 0.3);
+}
