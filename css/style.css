@@ -292,14 +292,14 @@ body > input[type="radio"] {
   background-position: center;
 }
 
-.user-nav li:nth-child(2) p {
+.user-nav .login-field p {
   width: 93px;
   height: 32px;
   padding: 8px 17px 9px 44px;
 }
 
 
-.user-nav li:nth-child(2) p::before {
+.user-nav .login-field  p::before {
   content: "";
   position: absolute;
   top: 6px;
@@ -311,24 +311,24 @@ body > input[type="radio"] {
   background-position: 0 0;
 }
 
-.user-nav li:nth-child(2) p:hover::before {
+.user-nav .login-field p:hover::before {
   background-image: url("../img/entrance.svg");
 }
 
-.user-nav li:nth-child(2) p:hover {
+.user-nav .login-field p:hover {
   background-color: #fff;
   color: #000;
 }
 
 
-.user-nav li:nth-child(3) p {
+.user-nav .basket  p {
   width: 117px;
   height: 32px;
-  padding: 8px 17px 9px 44px;
+  padding: 8px 16px 9px 41px;
   margin-right: 0;
 }
 
-.user-nav li:nth-child(3) p::before {
+.user-nav .basket p::before {
   content: "";
   position: absolute;
   top: 6px;
@@ -650,6 +650,8 @@ body > input[type="radio"] {
   border-radius: 100px;
   background-color: #d07058;
 }
+
+
 
 .gift-wrapper {
   display: flex;
@@ -1314,4 +1316,67 @@ body > input[type="radio"] {
 .coop-item:hover a {
   color: #ffbc9e;
   border-bottom: 1px solid rgba(255,188,158, 0.3);
+}
+
+.inner-page {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 27px;
+}
+
+.inner-page .site-nav li:first-child a::after {
+  content: "";
+  height: 0;
+}
+
+
+.inner-page .basket >  p {
+  color: #323232;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  background-color: #fff;
+  
+}
+
+.inner-page .basket {
+  position: relative;
+}
+ 
+.inner-page .user-nav > li:nth-child(3) > p::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 16px;
+  width: 21px;
+  height: 20px;
+  background-image: url("../img/basket-red.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.inner-page .basket-list {
+  position: absolute;
+  top: 36;
+  right: 0;
+  width: 540px;
+  padding: 20px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  background-color: #f8f7f4;
+  border-radius: 15px;
+  color: #323232;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  
+}
+
+.basket-item {
+  width: 510px;
+}
+
+.basket-btn {
+  width: 100px;
 }
