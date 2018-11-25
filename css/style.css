@@ -1370,13 +1370,24 @@ body > input[type="radio"] {
   font-size: 13px;
   font-weight: 400;
   line-height: 16px;
+  border-collapse: collapse;
   
 }
 
+.basket-cell {
+  border: 1px solid red;
+}
+
+.basket-checkout,
+.basket-total-price {
+  text-align: right;
+}
+
 .basket-item {
+  
   width: 510px;
 }
 
 .basket-btn {
-  width: 100px;
+  width: 170px;
 }
