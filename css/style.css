@@ -227,7 +227,7 @@ body > input[type="radio"] {
 .main-header {
   display: flex;
 }
-.main-header img {
+.main-header  .main-logo {
   padding-top: 9px;
   margin-right: 10px;
 }
@@ -1356,13 +1356,12 @@ body > input[type="radio"] {
 }
 
 .inner-page .basket-list {
+  display: none;
   position: absolute;
   top: 36;
   right: 0;
   width: 540px;
-  padding: 20px 15px;
-  display: flex;
-  flex-wrap: wrap;
+  padding: 8px 15px 20px 15px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
   border-radius: 15px;
@@ -1370,13 +1369,43 @@ body > input[type="radio"] {
   font-size: 13px;
   font-weight: 400;
   line-height: 16px;
-  border-collapse: collapse;
-  
+  border-collapse: collapse; 
+}
+
+.inner-page .basket:hover .basket-list {
+  display: block;
+
+}
+
+.basket-list span {
+  color: #999999;
 }
 
 .basket-cell {
-  border: 1px solid red;
+  text-align: left;
+  height: 55px;
+ 
 }
+
+.basket-cell:nth-child(2) {
+  width: 60px;
+  text-align: center;
+}
+
+.basket-cell:nth-child(3) {
+  width: 230px;
+}
+
+.basket-cell:nth-child(4) {
+  width: 125px;
+  text-align: center;
+}
+
+.basket-cell:nth-child(5) {
+  width: 75px;
+  text-align: center;
+}
+
 
 .basket-checkout,
 .basket-total-price {
@@ -1384,10 +1413,59 @@ body > input[type="radio"] {
 }
 
 .basket-item {
-  
   width: 510px;
 }
 
 .basket-btn {
   width: 170px;
+  color: #fefefe;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 10px 14px;
+}
+
+
+.btn-close {
+  position: relative;
+  background: none;
+  border: none;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.btn-close::before {
+  content: "";
+  position: absolute;
+  top: 5;
+  left: 0;
+  width: 15px;
+  height: 1px;
+  background-color: #000;
+  transform: rotate(45deg)
+}
+
+.btn-close::after {
+  content: "";
+  position: absolute;
+  top: 5;
+  left: 0;
+  width: 15px;
+  height: 1px;
+  background-color: #000;
+  transform: rotate(-45deg)
+}
+
+.basket-item:nth-child(2) {
+  border-bottom: 1px solid #cacac7;
+}
+
+.basket-total-price {
+  color: #323232;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
