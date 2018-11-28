@@ -1361,6 +1361,7 @@ body > input[type="radio"] {
 
 .inner-page .basket-list {
   display: none;
+  z-index: 100;
   position: absolute;
   top: 36;
   right: 0;
