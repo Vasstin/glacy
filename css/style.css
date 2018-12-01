@@ -596,7 +596,11 @@ body > input[type="radio"] {
 .sub-menu li:hover  a {
   background-color: #fbded8;
   border-radius: 0;
-  
+  box-shadow: none;
+}
+
+.sub-menu li:active  a {
+  background-color: #f6b5a5;
 }
 
 .sub-menu li {
@@ -735,10 +739,15 @@ body > input[type="radio"] {
 .popular-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
   margin-bottom: 40px;
+}
+
+.inner-page .popular-list {
+  margin-bottom: 50px;
 }
 
 .popular-item {
@@ -793,6 +802,10 @@ body > input[type="radio"] {
   height: 61px;
   background-image: url("../img/hit.svg");
   background-repeat: no-repeat;
+}
+
+.inner-page .popular-item::before {
+  display: none;
 }
 
 .popular-item:nth-child(1) {
@@ -1298,6 +1311,7 @@ body > input[type="radio"] {
   background-image: url("../img/logo-htmlacademy.svg");
   background-repeat: no-repeat;
   
+  
 }
 
 .copyright  .coop-item {
@@ -1320,6 +1334,10 @@ body > input[type="radio"] {
 .coop-item:hover a {
   color: #ffbc9e;
   border-bottom: 1px solid rgba(255,188,158, 0.3);
+}
+
+.coop-item:hover .coop-logo {
+  border: none;
 }
 
 .inner-page {
@@ -1521,6 +1539,10 @@ body > input[type="radio"] {
 
 .breadcrumbs li a {
   border-bottom: 1px solid rgba(255,255,255, 0.2);
+}
+
+.main {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .main h1 {
@@ -1792,5 +1814,164 @@ body > input[type="radio"] {
 .filter .inner-filter-btn:active{
   box-shadow: inset 0 2px 1px #696969;
   background-color: #ededed;
+}
+
+.inner-page .popular-item:nth-child(5) {
+  background-image: url("../img/ic1.png");
+  background-repeat: no-repeat;
+}
+
+.inner-page .popular-item:nth-child(6) {
+  background-image: url("../img/ic2.png");
+  background-repeat: no-repeat;
+}
+
+.inner-page .popular-item:nth-child(7) {
+  background-image: url("../img/ic3.png");
+  background-repeat: no-repeat;
+}
+.inner-page .popular-item:nth-child(8) {
+  background-image: url("../img/ic4.png");
+  background-repeat: no-repeat;
+}
+
+.inner-page .popular-item:nth-child(9) {
+  background-image: url("../img/ic1.png");
+  background-repeat: no-repeat;
+}
+
+.inner-page .popular-item:nth-child(10) {
+  background-image: url("../img/ic2.png");
+  background-repeat: no-repeat;
+}
+
+.inner-page .popular-item:nth-child(11) {
+  background-image: url("../img/ic3.png");
+  background-repeat: no-repeat;
+}
+.inner-page .popular-item:nth-child(12) {
+  background-image: url("../img/ic4.png");
+  background-repeat: no-repeat;
+}
+
+.inner-page .popular-item {
+  position: relative;
+  margin-bottom: 27px;
+}
+
+
+.popular-item h3 {
+  margin-bottom: 14px;
+  
+}
+
+.inner-page .fast-btn {
+  display: none;
+  position: absolute;
+  top: 345;
+  padding: 10px 17px;
+  margin: auto;
+  z-index: 100;
+  left: 35;
+}
+
+.inner-page .fast-btn a {
+  color: #fefefe;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px
+}
+
+.inner-page .hover-wrapper {
+  display: none;
+  position: absolute;
+  top: -10;
+  left: -15px;
+  padding-top: 380px;
+  height: 415px;
+  width: 295px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  background-color: #f8f7f4;
+  border-radius: 10px;
+  opacity: 0.2;
+  z-index: 50;
+}
+
+.inner-page .popular-item:hover .hover-wrapper {
+  display: block;
+}
+
+.inner-page .popular-item:hover .fast-btn {
+  display: block;
+}
+
+.catalog-list {
+  margin-bottom: 30px;
+}
+
+.pagination-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 180px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-left: auto;
+}
+
+.pagination-list .pagination-btn {
+  display: block;
+  width: 8px;
+  height: 12px;
+  cursor: pointer;
+}
+
+.pagination-list .pagination-btn-left {
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+}
+
+.pagination-list .pagination-btn-right {
+  background-image: url("../img/icon-right-small-white.svg");
+  background-repeat: no-repeat;
+}
+
+.pagination-item {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  padding: 3px 8px;
+}
+
+.pagination-list .pagination-item-current {
+  color: #323232;
+  border-radius: 100%;
+  background-color: #fff;
+}
+
+.pagination-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 100%;
+}
+
+.pagination-item-current:hover {
+  color: #323232;
+  border-radius: 100%;
+  background-color: #fff;
+  cursor: default;
+}
+
+.pagination-item:active {
+  color: #323232;
+  border-radius: 100%;
+  background-color: #fff;
+}
+
+.inner-page .footer-wrapper {
+  padding-top: 20px;
 }
 
