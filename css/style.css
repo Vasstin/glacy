@@ -1616,6 +1616,38 @@ body > input[type="radio"] {
   line-height: 16px;
 }
 
+.price-wrapper {
+  display: flex;
+  justify-content: s;
+  width: 220px;
+  color: #fff;
+}
+
+.price-wrapper input {
+  width: 50px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.min-max-price label {
+  display: inline-block;
+  font-weight: 500;
+  line-height: 16px;
+  cursor: pointer;
+  vertical-align: top;
+}
+
+.min-max-price  {
+  margin-left: 5px;
+}
+
+.max-price input {
+  margin-left: 5px;
+}
+
 .filter .price-controls {
   position: relative;
   width: 220px;
